@@ -7,18 +7,6 @@ See: [Instruction for Generating Synthetic Data](https://github.com/XD7479/Synth
 
 # NeMo Pose Estimation Training on Synthetic
 
-
-See test script: [test.sh](https://github.com/XD7479/SyntheticNeMo/blob/main/test_pascal3d/test.sh)
-
-And run
-
-```
-cd test_pascal3d
-. test.sh
-```
-
-# NeMo Pose Estimation Testing on Real
-
 See training script: [pretrain.sh](https://github.com/XD7479/SyntheticNeMo/blob/main/train/pretrain.sh)
 
 And run
@@ -28,6 +16,16 @@ cd train
 . pretrain.sh
 ```
 
+# NeMo Pose Estimation Testing on Real
+
+See test script: [test.sh](https://github.com/XD7479/SyntheticNeMo/blob/main/test_pascal3d/test.sh)
+
+And run
+
+```
+cd test_pascal3d
+. test.sh
+```
 
 # NeMo Pose Estimation Training: Synthetic + Pseudo Labeling on Real
 
