@@ -1,23 +1,19 @@
-sleep 60m
+### Read Me First! ###
+#
+# For other classes, please change the following arguments:
+#     "category"
+#     "prev_ckpt"
+# and the name of the output log correspondingly.
+#
+#######################
 
-CUDA_VISIBLE_DEVICES=3,4,5,6 python fine_tune.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python fine_tune.py \
 --exp_name 0305_fine_tune_10% \
---category train \
+--category aeroplane \
 --save_path ../experiments \
 --mesh_path ../data/Pascal_CAD_single \
 --bg_path ../data/background \
 --test_result_file ../test_pascal3d/0303_p3d+_trainset \
---prev_ckpt ../experiments/P3DCAD_train_0303/ckpts/saved_model_2000.pth \
+--prev_ckpt ../experiments/P3DCAD_aeroplane_0303/ckpts/saved_model_2000.pth \
 --num_samples 92 \
-> 0305_fine_tune_10%_train.txt 2>&1 &
-
-CUDA_VISIBLE_DEVICES=4,5,6,3 python fine_tune.py \
---exp_name 0305_fine_tune_10% \
---category tvmonitor \
---save_path ../experiments \
---mesh_path ../data/Pascal_CAD_single \
---bg_path ../data/background \
---test_result_file ../test_pascal3d/0303_p3d+_trainset \
---prev_ckpt ../experiments/P3DCAD_tvmonitor_0303/ckpts/saved_model_2000.pth \
---num_samples 92 \
-> 0305_fine_tune_10%_tvmonitor.txt 2>&1 &
+> 0305_fine_tune_10%_aeroplane.txt 2>&1 &
