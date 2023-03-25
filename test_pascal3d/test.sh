@@ -1,3 +1,10 @@
+### Read Me First! ###
+#
+# If you are going to use pseudo labels,
+# add "--prepare_for_pseudo" to each command line.
+
+######################
+
 CUDA_VISIBLE_DEVICES=0 python pred_imagenet.py \
 --ckpt ../experiments/0305_fine_tune_10%_aeroplane/ckpts/saved_model_1000.pth \
 --mesh_path ../data/Pascal_CAD_single \
