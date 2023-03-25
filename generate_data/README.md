@@ -55,3 +55,15 @@ First download the [Describable Texture Dataset (DTD)](https://www.robots.ox.ac.
 ```
 
 Note that we use different model (.blend) files. We add smart UV maps to render textures.
+
+
+# Generate the Synthetic Pascal3D+ Dataset
+
+## Render Synthetic Objects from Pascal3D+ CAD Models
+
+See ```generate_p3d.sh```.
+
+## Add Background to Synthetic Images and Organize Annotation for NeMo Pose Estimation.
+
+See ```prepare_training_data.sh```.
+
