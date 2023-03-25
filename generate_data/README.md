@@ -1,3 +1,7 @@
+### [Generate the SuperCLEVR Dataset](#generate-the-superclevr-dataset)
+
+### [Generate the Synthetic Pascal3D+ Dataset](#generate-the-synthetic-pascal3d-dataset)
+
 # Generate the SuperCLEVR Dataset
 
 ## Install
