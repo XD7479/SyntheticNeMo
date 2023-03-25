@@ -1,3 +1,12 @@
+### Read Me First! ###
+#
+# For other classes, please change the following arguments:
+#     "category"
+#     "prev_ckpt"
+# and the name of the output log correspondingly.
+#
+#######################
+
 CUDA_VISIBLE_DEVICES=0,1,2,3 python pseudo.py \
 --exp_name 0305_pseudo \
 --category aeroplane \
